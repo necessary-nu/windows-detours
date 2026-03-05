@@ -1,0 +1,22 @@
+[package]
+name = "windows-detours"
+version = "0.1.0"
+edition = "2024"
+description = "Safe Rust bindings to Microsoft Detours"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/necessary-nu/windows-detours"
+readme = "README.md"
+keywords = ["detours", "hooking", "windows", "ffi"]
+categories = ["os::windows-apis", "api-bindings"]
+
+[dependencies]
+windows-sys = { version = "0.61", features = [
+    "Win32_Foundation",
+    "Win32_System_Threading",
+    "Win32_System_LibraryLoader",
+    "Win32_Security",
+    "Win32_System_Memory",
+] }
+
+[build-dependencies]
+cc = "1"
