@@ -2,6 +2,7 @@
 name = "windows-detours"
 version = "0.1.0"
 edition = "2024"
+authors = ["Brendan Molloy <brendan@necessary.nu>"]
 description = "Safe Rust bindings to Microsoft Detours"
 license = "Apache-2.0 OR MIT"
 repository = "https://github.com/necessary-nu/windows-detours"
